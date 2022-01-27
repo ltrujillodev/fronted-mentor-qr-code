@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d5e1ef;
+}
+
+/* Iphone 6/7/8 */
+.main-container {
+  width: 325px;
+  height: 557px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Samsung Galaxy A51/A71 */
+@media (min-width: 412px) {
+  .main-container {
+    margin-top: 178.5px;
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .main-container {
+    margin-top: 25px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.qr-img {
+  width: 275px;
+  border-radius: 25px;
+}
+
+.p-bold,
+.p-normal {
+  font-family: "Outfit", sans-serif;
+}
+
+.p-bold {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(218, 44%, 22%);
+  padding: 0 20px;
+}
+
+.p-normal {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(220, 15%, 55%);
+  padding: 0 15px;
+}
